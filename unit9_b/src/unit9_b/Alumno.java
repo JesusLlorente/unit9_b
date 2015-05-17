@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
  */
 public class Alumno {
     public boolean validaNif(String nif) {
-        if (nif.length() != 9 || nif == null) {
+        if (nif == null || nif.length() != 9) { // Cambio el orden por error null
             return false;
         }
         String dni = nif.substring(0, 8);
